@@ -28,6 +28,7 @@ Melitta Speciale zadowoli nawet najwybredniejszych smakoszy kawy.
 
 const ProductPage: React.FC<ProductPageProps> = ({match}) => {
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [state, setState] = useState<State>({
         isLoading: true,
         title: "MELITTA BELLACREMA SPECIALE 1 KG",
@@ -39,7 +40,7 @@ const ProductPage: React.FC<ProductPageProps> = ({match}) => {
         <Box className={"main-container"}>
             <Card style={{minWidth: "90vw", minHeight: "90vh", padding:"2vh 2vw 2vh 2vw"}}>
                 <Box style={{display: "flex"}}>
-                    <img src={kawa} width="200px"/>
+                    <img src={kawa} alt="kawa" width="200px"/>
                     <Box style={{display: "flex", flexDirection:"row", minWidth: "50%", justifyContent:"flex-end"}}>
                         <Box style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                             <Typography variant={"h2"}>{state.title}</Typography>
