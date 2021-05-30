@@ -29,8 +29,8 @@ jobs:
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
       with:
-        name: e-biznes-frontend
-        path: .
+        name: app-build
+        path: build
 
   deploy:
     runs-on: windows-latest
@@ -43,7 +43,7 @@ jobs:
     - name: Download artifact from build job
       uses: actions/download-artifact@v2
       with:
-        name: e-biznes-frontend
+        name: app-build
 
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp
