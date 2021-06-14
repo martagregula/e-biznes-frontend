@@ -1,7 +1,5 @@
 import "./LoginScreen.css";
-import { GoogleLoginButton } from "react-social-login-buttons";
-import { createButton } from "react-social-login-buttons";
-import { createSvgIcon } from "react-social-login-buttons";
+import { GoogleLoginButton, createButton, createSvgIcon } from "react-social-login-buttons";
 
 const LoginScreen = () => {
   function Icon({ width, height, color }) {

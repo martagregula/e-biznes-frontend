@@ -34,12 +34,7 @@ class AuthService {
 
   isLoggedIn() {
     var myCookie = this.getCookie("csrfToken");
-
-    if (myCookie === null) {
-      return false;
-    } else {
-      return true;
-    }
+    return myCookie === null;
   }
 }
 
