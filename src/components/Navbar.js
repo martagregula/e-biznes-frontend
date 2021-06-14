@@ -1,14 +1,22 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useState } from "react";
+import AuthService from "../services/AuthService";
 
 const Navbar = ({ click }) => {
   const cart = useSelector((state) => state.cart);
+  const [isLoggedIn, setIsLoggedIn] = useState(AuthService.isLoggedIn());
   const { cartItems } = cart;
 
   const getCartCount = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
+
+  const handleLogout = () => {
+    AuthService.logout();
+    setIsLoggedIn(AuthService.isLoggedIn());
+  }
 
   return (
     <nav className="navbar">
@@ -27,6 +35,26 @@ const Navbar = ({ click }) => {
             </span>
           </Link>
         </li>
+        {
+          !isLoggedIn ?
+        <li>
+         <Link to="/login" className="cart__link">
+            <i className="fas fa-shopping-cart"></i>
+            <span>
+              Zaloguj się
+            </span>
+          </Link>
+        </li>
+        :
+        <li>
+         <Link to="/" onClick={() => handleLogout()} className="cart__link">
+            <i className="fas fa-shopping-cart"></i>
+            <span>
+              Wyloguj się
+            </span>
+          </Link>
+        </li>
+      }
       </ul>
 
       <div className="hamburger__menu" onClick={click}>
