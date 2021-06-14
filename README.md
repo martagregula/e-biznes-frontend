@@ -1,3 +1,8 @@
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Metanefrydia_e-biznes-frontend&metric=bugs)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Metanefrydia_e-biznes-frontend&metric=code_smells)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Metanefrydia_e-biznes-frontend)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Metanefrydia_e-biznes-frontend&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
