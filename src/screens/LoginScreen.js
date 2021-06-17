@@ -13,7 +13,7 @@ const LoginScreen = () => {
     );
   }
 
-  const serverUrl = "http://localhost:9000"; // https://api-mg-ebiznes.azurewebsites.net
+  const serverUrl = "https://api-mg-ebiznes.azurewebsites.net";
 
   const config = {
     text: "Log in with GitLab",

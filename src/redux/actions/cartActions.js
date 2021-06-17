@@ -2,7 +2,7 @@ import * as actionTypes from "../constants/cartConstants";
 import axios from "axios";
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
-  const { data } = await axios.get(`/api/product/${id}`);
+  const { data } = await axios.get(`https://api-mg-ebiznes.azurewebsites.net/api/product/${id}`);
 
   const imgName = data.name.replace(/\s+/g, '-').toLowerCase();
   const imgUrl = `${process.env.PUBLIC_URL}/products/${imgName}.png`;
