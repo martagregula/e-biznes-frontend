@@ -1,6 +1,8 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Metanefrydia_e-biznes-frontend&metric=bugs)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Metanefrydia_e-biznes-frontend&metric=code_smells)](https://sonarcloud.io/dashboard?id=Metanefrydia_e-biznes-frontend)
 
+https://app-mg-ebiznes.azurewebsites.net
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
